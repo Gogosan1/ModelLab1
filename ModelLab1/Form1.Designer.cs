@@ -59,6 +59,7 @@
             this.secondChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.distributionFirst = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button2 = new System.Windows.Forms.Button();
@@ -147,6 +148,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.firstChart);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.secondChart);
@@ -157,6 +159,14 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "функции плотности";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1026, 277);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.TabIndex = 4;
             // 
             // tabPage2
             // 
@@ -310,6 +320,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.secondChart)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.distributionFirst)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.distributionSecond)).EndInit();
@@ -335,6 +346,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart distribution;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataVisualization.Charting.Chart density;
+        private System.Windows.Forms.Label label1;
     }
 }
 
